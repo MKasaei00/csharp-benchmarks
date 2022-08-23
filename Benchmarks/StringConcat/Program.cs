@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Foreach_Linq
+namespace StringConcat
 {
     public class Program
     {
