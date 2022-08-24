@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListCapacity", "ListCapacit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateNewInLoop", "CreateNewInLoop\CreateNewInLoop.csproj", "{14A44F76-9784-4DE2-8A4D-39A39ECC10B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlineMethod", "InlineMethod\InlineMethod.csproj", "{A673694C-2D3D-434C-932D-AC0E068B5C74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{14A44F76-9784-4DE2-8A4D-39A39ECC10B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14A44F76-9784-4DE2-8A4D-39A39ECC10B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14A44F76-9784-4DE2-8A4D-39A39ECC10B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A673694C-2D3D-434C-932D-AC0E068B5C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A673694C-2D3D-434C-932D-AC0E068B5C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A673694C-2D3D-434C-932D-AC0E068B5C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A673694C-2D3D-434C-932D-AC0E068B5C74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

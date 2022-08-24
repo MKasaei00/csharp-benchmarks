@@ -1,9 +1,4 @@
-namespace CreateNewInLoop;
-
-public interface IAdapter
-{
-    string Convert(int number);
-}
+namespace CreateNewInLoop.Classes;
 
 public class Adapter : IAdapter
 {

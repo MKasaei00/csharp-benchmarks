@@ -1,30 +1,30 @@
 using BenchmarkDotNet.Attributes;
-using CreateNewInLoop.Classes;
+using InlineMethod.Classes;
 
-namespace CreateNewInLoop;
+namespace InlineMethod;
 
 [MemoryDiagnoser]
-public class CreateInLoopBenchmark
+public class InlineMethodBenchmark
 {
     private const int count = 1_000;
-
+    
     [Benchmark]
-    public void CreateInLoop()
-    {
-        for (var i = 0; i < count; i++)
-        {
-            new Adapter().Convert(i);
-        }
-    }
-
-
-    [Benchmark]
-    public void CreateOnce()
+    public void NormalCall()
     {
         var adapter = new Adapter() as IAdapter;
         for (var i = 0; i < count; i++)
         {
             adapter.Convert(i);
+        }
+    }
+    
+    [Benchmark]
+    public void InlineMethodCall()
+    {
+        var adapter = new Adapter() as IAdapter;
+        for (var i = 0; i < count; i++)
+        {
+            adapter.InlineConvert(i);
         }
     }
 }
