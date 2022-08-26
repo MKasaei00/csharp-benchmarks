@@ -16,14 +16,14 @@ public class LinqForeachBenchmark
             sum += item;
         }
     }
-    
+
     [Benchmark]
     public void IterateThoroughForeachLinq()
     {
         var sum = 0L;
         list.ForEach(i => sum += i);
     }
-    
+
     [Benchmark]
     public void IterateThoroughForeachLinqAggregate()
     {

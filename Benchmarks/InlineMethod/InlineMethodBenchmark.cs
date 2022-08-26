@@ -7,7 +7,7 @@ namespace InlineMethod;
 public class InlineMethodBenchmark
 {
     private const int count = 1_000;
-    
+
     [Benchmark]
     public void NormalCall()
     {
@@ -17,7 +17,7 @@ public class InlineMethodBenchmark
             adapter.Convert(i);
         }
     }
-    
+
     [Benchmark]
     public void InlineMethodCall()
     {
